@@ -1,0 +1,28 @@
+{
+  "name": "timestamp_microservice",
+  "version": "1.0.0",
+  "description": "'Timestamp Microservice' is required for freeCodeCamp Back End Certification.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharmedSatyr/timestamp_microservice.git"
+  },
+  "keywords": [
+    "freeCodeCamp",
+    "Node.js"
+  ],
+  "author": "CharmedSatyr",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/CharmedSatyr/timestamp_microservice/issues"
+  },
+  "homepage": "https://github.com/CharmedSatyr/timestamp_microservice#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "moment": "^2.18.1",
+    "moment-parseformat": "^2.2.0"
+  }
+}
