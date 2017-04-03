@@ -5,11 +5,9 @@ const parseFormat = require('moment-parseformat');
 
 const port = process.env.PORT || 5000;
 
-app.use(express.static('static'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/:time', function(req, res) {
-    console.log('Listening on port ' + port);
-
     if (req.method !== 'GET') {
         res.status(404).send('Send me a GET!');
     }
@@ -45,4 +43,6 @@ app.get('/:time', function(req, res) {
     res.json(time);
 
 });
-app.listen(port);
+app.listen(port, function() {
+    console.log('Listening on port', port);
+});
