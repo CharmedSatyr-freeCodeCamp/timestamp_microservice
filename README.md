@@ -3,6 +3,8 @@
 
 **Date Completed: April 3, 2017**
 
+See the project on Heroku at: [https://charmed-timestamper.herokuapp.com/](https://charmed-timestamper.herokuapp.com/)
+
 >1. **Objective**: Build a full stack JavaScript app that is functionally similar to this: [https://timestamp-ms.herokuapp.com/](https://timestamp-ms.herokuapp.com/) and deploy it to Heroku.
 
 >2. Note that for each project, you should create a new GitHub repository and a new Heroku project. If you can't remember how to do this, revisit [https://freecodecamp.com/challenges/get-set-for-our-api-development-projects](https://freecodecamp.com/challenges/get-set-for-our-api-development-projects).
