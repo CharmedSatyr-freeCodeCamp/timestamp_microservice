@@ -12,7 +12,9 @@ html(lang='en')
     body
         h2 CharmedSatyr's Timestamp Microservice
         div(class='main')
-            p Type a Unix timestamp or natural language date at the end of this website's URL!
+            p
+                strong Directions:&#32;
+                span Type a Unix timestamp or natural language date at the end of this website's URL!
             p This application will use Node.js, Express.js, and other libraries to return a JSON object in response to your entry.
             p The object will include both the Unix timestamp and expanded natural language format for your entry. (Unparsable entries will return&#32;
                 span
@@ -21,7 +23,11 @@ html(lang='en')
             br
             h3 For example:
             p The entries
+            code https://charmed-timestamper.herokuapp.com/2015-12-15
+            br
+            br
             code https://charmed-timestamper.herokuapp.com/December%2015,%202015
+            br
             br
             code https://charmed-timestamper.herokuapp.com/1450105200
             p and
@@ -29,7 +35,7 @@ html(lang='en')
             p all return
             code {"unix":"1450105200","natural":"Tuesday, December 15th, 2015, 12:00:00 am"}
             br
-            p Try it out!
+            br
             br
             p
                 strong You can also view this project's source files on&#32;
