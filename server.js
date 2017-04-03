@@ -10,13 +10,12 @@ const port = process.argv[2] || 3000;
 //app.set('views', './index.pug');
 //const compiledFunction = pug.compileFile('index.pug');
 
-
 app.get('/:time', function(req, res) {
     console.log('Listening on port ' + port);
+
     if (req.method !== 'GET') {
-        res.send(404 + '\n"Send me a GET!"');
+        res.status(404).send('Send me a GET!');
     }
-    res.set('Content-Type', 'application/json');
 
     const t = req.params.time;
 
@@ -28,7 +27,7 @@ app.get('/:time', function(req, res) {
 
     //Unix time handler
     //Check to see if t is numbers only & a valid Unix timestamp in seconds
-    let nums = /^[0-9]+$/g;
+    const nums = /^[0-9]+$/g;
     if (t.match(nums) && moment(t, 'X').isValid()) {
         time = {
             unix: t + ' seconds',
@@ -39,16 +38,15 @@ app.get('/:time', function(req, res) {
     //Natural time handler
     //If it's not all numbers but moment-parser can parse it, we can proceed
     const format = parseFormat(t).toString();
-
     if (!t.match(nums) && moment(t, format).format() !== 'Invalid date') {
         time = {
             unix: moment(t, format).format('X'),
             natural: moment(t, format).format('dddd, MMMM Do, YYYY, h:mm:ss a')
         }
     }
-//pug.renderFile('index.pug', {time: time});
-//    res.render('index', {time: JSON.stringify(time)});
-    res.send(time);
+    //pug.renderFile('index.pug', {time: time});
+    //    res.render('index', {time: JSON.stringify(time)});
+    res.json(time);
 
 });
 app.listen(port);
