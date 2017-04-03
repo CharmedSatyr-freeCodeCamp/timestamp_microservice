@@ -3,7 +3,7 @@ const app = express();
 const moment = require('moment');
 const parseFormat = require('moment-parseformat');
 
-const port = process.argv[2] || 3000;
+const port = process.env.PORT || 5000;
 
 app.use(express.static('static'));
 
