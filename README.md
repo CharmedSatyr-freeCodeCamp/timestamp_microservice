@@ -1,5 +1,5 @@
 # **Timestamp Microservice**
-### "Timestamp Microservice" is a project required for freeCodeCamp Back End Certification: https://www.freecodecamp.com/challenges/https://www.freecodecamp.com/challenges/timestamp-microservice
+### "Timestamp Microservice" is a project required for freeCodeCamp Back End Certification: https://www.freecodecamp.com/challenges/timestamp-microservice
 
 **Date Completed: April 3, 2017**
 
