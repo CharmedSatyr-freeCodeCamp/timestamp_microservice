@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CharmedSatyr/timestamp_microservice.git"
+    "url": "git+https://github.com/CharmedSatyr-freeCodeCamp/timestamp_microservice.git"
   },
   "keywords": [
     "freeCodeCamp",
@@ -17,9 +17,9 @@
   "author": "CharmedSatyr",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/CharmedSatyr/timestamp_microservice/issues"
+    "url": "https://github.com/CharmedSatyr-freeCodeCamp/timestamp_microservice/issues"
   },
-  "homepage": "https://github.com/CharmedSatyr/timestamp_microservice#readme",
+  "homepage": "https://github.com/CharmedSatyr-freeCodeCamp/timestamp_microservice#readme",
   "dependencies": {
     "express": "^4.15.2",
     "moment": "^2.18.1",
