@@ -1,73 +1,87 @@
-
 <html lang="en">
+
   <head>
     <title>Charmed Timestamper</title>
     <style type="text/css">
       html {
-          font-family: sans-serif;
-          -webkit-text-size-adjust: 100%;
-          -ms-text-size-adjust: 100%
-          }
-      
+        font-family: sans-serif;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%
+      }
+
       body {
-          margin: 2%;
-          text-align: center;
-          }
-      
+        margin: 2%;
+        text-align: center;
+      }
+
       h2,
       h3,
       h4 {
-          font-weight: 500;
-          line-height: 1.1;
+        font-weight: 500;
+        line-height: 1.1;
       }
+
       code {
-          padding: 2px 4px;
-          font-size: 90%;
-          font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-          line-height: 1.5;
-          color: #c7254e;
-          background-color: #f9f2f4;
-          border-radius: 4px;
+        padding: 2px 4px;
+        font-size: 90%;
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        line-height: 1.5;
+        color: #c7254e;
+        background-color: #f9f2f4;
+        border-radius: 4px;
       }
-      
+
       .cblock {
-          display: block;
-          left: 0;
-          margin: auto;
-          right: 0;
-          width: 75%;
+        display: block;
+        left: 0;
+        margin: auto;
+        right: 0;
+        width: 75%;
       }
-      
+
       a {
-          color: #337ab7;
-          text-decoration: none;
+        color: #337ab7;
+        text-decoration: none;
       }
-      
+
       a:focus,
       a:hover {
-          color: #23527c;
-          text-decoration: underline;
+        color: #23527c;
+        text-decoration: underline;
       }
-      
+
       a:focus {
-          outline: 5px auto -webkit-focus-ring-color;
-          outline-offset: -2px;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
       }
+
     </style>
   </head>
+
   <body>
     <h2>Charmed Timestamper</h2>
     <h4>by&#32;<a href="https://charmedsatyr.com">CharmedSatyr</a></h4>
-    <p><strong>Directions:&#32;</strong><span>Type a Unix timestamp or natural language date at the end of this website's URL.</span></p>
-    <p>This timestamp microservice will use Node.js, Express.js, and other libraries to return a JSON object in response to your entry.</p>
-    <p>The object will include both the Unix timestamp and expanded natural language format for your entry. (Unparsable entries will return&#32;<span><code>null&#32;</code><span>values.)</span></span></p><br/>
+    <p><strong>Directions:&#32;</strong><span>Type a Unix timestamp or natural language date at the
+        end of this website's URL.</span></p>
+    <p>This timestamp microservice will use Node.js, Express.js, and other libraries to return a
+      JSON object in response to your entry.</p>
+    <p>The object will include both the Unix timestamp and expanded natural language format for your
+      entry. (Unparsable entries will
+      return&#32;<span><code>null&#32;</code><span>values.)</span></span></p><br />
     <h3>For example:</h3>
     <p>The entries</p>
-    <div class="cblock"><code>https://charmed-timestamper.herokuapp.com/2015-12-15</code><br/><br/><code>https://charmed-timestamper.herokuapp.com/December%2015,%202015</code><br/><br/><code>https://charmed-timestamper.herokuapp.com/1450105200</code></div>
+    <div class="cblock">
+      <code>https://charmed-timestamper.herokuapp.com/2015-12-15</code><br /><br /><code>https://charmed-timestamper.herokuapp.com/December%2015,%202015</code><br /><br /><code>https://charmed-timestamper.herokuapp.com/1450105200</code>
+    </div>
     <p>and</p>
     <div class="cblock"><code>https://charmed-timestamper.herokuapp.com/mon 15 dec 2015</code></div>
     <p>all return</p>
-    <div class="cblock"><code>{"unix":"1450105200","natural":"Tuesday, December 15th, 2015, 12:00:00 am"}</code></div><br/><br/><br/>
-    <h4>You can view this project's source files on&#32;<a href="https://github.com/charmedsatyr/timestamp_microservice.git" target="_blank">GitHub.</a></h4>
+    <div class="cblock">
+      <code>{"unix":"1450105200","natural":"Tuesday, December 15th, 2015, 12:00:00 am"}</code></div>
+    <br /><br /><br />
+    <h4>You can view this project's source files on&#32;<a
+        href="https://github.com/charmedsatyr-freecodecamp/timestamp_microservice.git"
+        target="_blank">GitHub.</a></h4>
   </body>
+
 </html>
