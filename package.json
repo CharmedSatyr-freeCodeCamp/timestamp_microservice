@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/CharmedSatyr-freeCodeCamp/timestamp_microservice#readme",
   "dependencies": {
-    "express": "^4.15.2",
+    "express": "^4.18.2",
     "moment": "^2.18.1",
     "moment-parseformat": "^2.2.0"
   }
